@@ -1,16 +1,36 @@
 :root {
-  background-color: black !important;
+  overflow-x: hidden;
 }
 #black {
-  background-color: black !important;
+  background-color: transparent !important;
 }
 #fluid {
   width: 100% !important;
-  background-color: black !important;
+  background-image: linear-gradient(
+    to top,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #020202,
+    #030303,
+    #050505,
+    #090909,
+    #0c0c0c,
+    #0f0f0f,
+    #121212
+  );
   color: rgb(226, 226, 226) !important;
 }
 #movie {
-  aspect-ratio: 16/9;
+  aspect-ratio: 3/4;
+  border: 3px solid rgba(67, 67, 67, 0.455);
+  border-radius: 2px;
+  max-height: 400px;
+  max-width: 250px;
   object-fit: cover;
-  max-width: 100%;
+}
+h4 {
+  margin-top: 1.5rem !important;
 }

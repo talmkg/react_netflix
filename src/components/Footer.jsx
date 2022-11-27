@@ -2,7 +2,7 @@ import Card from "react-bootstrap/Card";
 
 function Footer() {
   return (
-    <Card className="text-center fixed-bottom text-light" id="black">
+    <Card className="text-center text-light" id="black">
       <Card.Body>
         <Card.Title>Special title treatment</Card.Title>
         <Card.Text>
