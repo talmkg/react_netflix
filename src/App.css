@@ -1,0 +1,16 @@
+:root {
+  background-color: black !important;
+}
+#black {
+  background-color: black !important;
+}
+#fluid {
+  width: 100% !important;
+  background-color: black !important;
+  color: rgb(226, 226, 226) !important;
+}
+#movie {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  max-width: 100%;
+}
