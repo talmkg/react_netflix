@@ -107,9 +107,9 @@ class carousel extends Component {
             {/* desktop version */}
             <Carousel id="desktop-view-first-carousel">
               <Carousel.Item>
-                <Row className=" row-cols-7">
+                <Row className=" row-cols-8">
                   {this.state.key1.Search &&
-                    this.state.key1.Search.slice(0, 7).map((movie) => (
+                    this.state.key1.Search.slice(0, 8).map((movie) => (
                       <Col style={{ zIndex: 1 }}>
                         <div class="content">
                           <img
