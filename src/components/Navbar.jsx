@@ -1,10 +1,9 @@
 import { Container, Navbar, Nav } from "react-bootstrap";
-import "../App.css";
 function BSnavbar() {
   return (
     <>
-      <Navbar bg="dark" variant="dark" id="black">
-        <div className="d-flex">
+      <Navbar variant="dark" id="black">
+        <Container fluid className="d-flex">
           <div className="d-flex align-items-center">
             <Navbar.Brand href="#home">
               <img
@@ -23,7 +22,7 @@ function BSnavbar() {
               <Nav.Link href="#pricing">My List</Nav.Link>
             </Nav>
           </div>
-        </div>
+        </Container>
       </Navbar>
     </>
   );
