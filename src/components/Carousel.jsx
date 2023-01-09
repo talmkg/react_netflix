@@ -69,7 +69,7 @@ class carousel extends Component {
         <div>
           <Carousel>
             <Carousel.Item>
-              <Row className="row-cols-2">
+              <Row className="row-cols-2 row-cols-md-6">
                 {this.state.key1.Search &&
                   this.state.key1.Search.slice(0, 6).map((movie) => (
                     <Col>
@@ -90,7 +90,7 @@ class carousel extends Component {
                   this.state.key1.Search.slice(4, 10).map((movie) => (
                     <Col>
                       <img
-                        className="w-100"
+                        className="w-100 mb-2"
                         src={movie.Poster}
                         alt={movie.Title}
                         id="movie"
