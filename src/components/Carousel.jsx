@@ -17,7 +17,7 @@ class carousel extends Component {
         "https://www.omdbapi.com/?apikey=e13e47fa&s=star+wars"
       );
       const response2 = await fetch(
-        "https://www.omdbapi.com/?apikey=e13e47fa&s=lord%20of%20the%20rings"
+        "https://www.omdbapi.com/?apikey=e13e47fa&s=marvel"
       );
       const response3 = await fetch(
         "https://www.omdbapi.com/?apikey=e13e47fa&s=star%20trek"
@@ -173,7 +173,9 @@ class carousel extends Component {
           </div>
 
           <span className="d-flex justify-content-between align-items-center mt-2 mb-2 ">
-            <h4 id="no-p-no-m">Lord Of The Rings Franchise</h4>
+            <h4 id="no-p-no-m" className="text-truncate">
+              Marvel Cinematic Universe
+            </h4>
             <h4>
               <BsChevronRight className="text-red-darker" />
             </h4>
