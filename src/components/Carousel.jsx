@@ -1,5 +1,6 @@
 import { Component } from "react";
-import { Carousel, Stack, Spinner } from "react-bootstrap";
+import React, { useState, useEffect } from "react";
+import { Carousel, Stack, Spinner, Row, Col } from "react-bootstrap";
 class carousel extends Component {
   state = {
     key1: [],
@@ -11,7 +12,7 @@ class carousel extends Component {
   movieSearch = async () => {
     try {
       const response1 = await fetch(
-        "http://www.omdbapi.com/?apikey=e13e47fa&s=harry%20potter"
+        "http://www.omdbapi.com/?apikey=e13e47fa&s=star%20trek"
       );
       const response2 = await fetch(
         "http://www.omdbapi.com/?apikey=e13e47fa&s=lord%20of%20the%20rings"
@@ -52,33 +53,56 @@ class carousel extends Component {
   render() {
     return (
       <>
-        {this.state.isLoading && (
-          <Spinner
-            animation="border"
-            role="status"
-            className="custom-spinner-color"
-          >
-            <span className="sr-only">Loading...</span>
-          </Spinner>
-        )}
+        <div className="d-flex justify-content-center align-items-center">
+          {this.state.isLoading && (
+            <Spinner
+              animation="border"
+              role="status"
+              className="custom-spinner-color"
+            >
+              <span className="sr-only"></span>
+            </Spinner>
+          )}
+        </div>
         <h4>Trending Now</h4>
 
-        <Carousel fade>
-          <Carousel.Item className="d-flex">
-            <Stack direction="horizontal" gap={2}>
-              {this.state.key1.Search &&
-                this.state.key1.Search.slice(0, 8).map((movie) => (
-                  <img
-                    className="d-block w-100"
-                    src={movie.Poster}
-                    alt={movie.Title}
-                    id="movie"
-                    key1={movie.imdbID}
-                  />
-                ))}
-            </Stack>
-          </Carousel.Item>
-        </Carousel>
+        <div>
+          <Carousel>
+            <Carousel.Item>
+              <Row className="row-cols-2">
+                {this.state.key1.Search &&
+                  this.state.key1.Search.slice(0, 6).map((movie) => (
+                    <Col>
+                      <img
+                        className="w-100 mb-2"
+                        src={movie.Poster}
+                        alt={movie.Title}
+                        id="movie"
+                        key1={movie.imdbID}
+                      />
+                    </Col>
+                  ))}
+              </Row>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Row className="row-cols-6">
+                {this.state.key1.Search &&
+                  this.state.key1.Search.slice(4, 10).map((movie) => (
+                    <Col>
+                      <img
+                        className="w-100"
+                        src={movie.Poster}
+                        alt={movie.Title}
+                        id="movie"
+                        key1={movie.imdbID}
+                      />
+                    </Col>
+                  ))}
+              </Row>
+            </Carousel.Item>
+          </Carousel>
+        </div>
+
         <h4>Watch It Again</h4>
         <Carousel fade>
           <Carousel.Item className="d-flex">
@@ -97,6 +121,7 @@ class carousel extends Component {
           </Carousel.Item>
         </Carousel>
         <h4>New Releases</h4>
+
         <Carousel fade>
           <Carousel.Item className="d-flex">
             <Stack direction="horizontal" gap={2}>
