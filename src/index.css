@@ -1,8 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
 body {
+  background-color: #0f0f0f !important;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -13,15 +13,93 @@ code {
 }
 #body,
 #navbar,
+#footer,
+#mobile-navbar,
 #footer {
   background-color: #0f0f0f !important;
 }
-.row.inline-block > * {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
+#homepage {
+  height: 80vh;
+  background-color: #262626;
 }
 #movie {
-  aspect-ratio: 3/4 !important;
+  aspect-ratio: 11/16 !important;
   object-fit: cover;
+}
+.text-red {
+  color: #ff002b !important;
+}
+a {
+  text-decoration: none !important;
+  opacity: 0.8;
+}
+/*PROJECTS --> DATA (OVERLAY)              START*/
+.content {
+  position: relative;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  z-index: 3;
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(
+    to top,
+    #000000,
+    #000000cc,
+    #ad353586,
+    #b9b9b91e,
+    #ffffff00
+  );
+  color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  font-size: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center !important;
+  display: flex;
+  align-items: flex-end;
+}
+
+.content:hover .overlay {
+  opacity: 1;
+}
+/*PROJECTS --> DATA (OVERLAY)           END*/
+@media only screen and (max-width: 700px) {
+  #mobile-view-first-carousel {
+    display: block;
+  }
+  #desktop-view-first-carousel {
+    display: none;
+  }
+  #desktop-navbar {
+    display: none;
+  }
+  .award-winning {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  #headings {
+    margin-top: 1rem;
+    opacity: 0.8;
+  }
+}
+@media only screen and (min-width: 700px) {
+  #mobile-view-first-carousel {
+    display: none;
+  }
+  #mobile-navbar {
+    display: none !important;
+  }
 }

@@ -1,6 +1,8 @@
 import { Component } from "react";
 import React, { useState, useEffect } from "react";
+
 import { Carousel, Stack, Spinner, Row, Col } from "react-bootstrap";
+
 class carousel extends Component {
   state = {
     key1: [],
@@ -18,10 +20,11 @@ class carousel extends Component {
         "https://www.omdbapi.com/?apikey=e13e47fa&s=lord%20of%20the%20rings"
       );
       const response3 = await fetch(
-        "https://www.omdbapi.com/?apikey=e13e47fa&s=star%20wars"
+        "https://www.omdbapi.com/?apikey=e13e47fa&s=star%20trek"
       );
       if (response1.ok && response2.ok && response3.ok) {
         const unboxedResponse1 = await response1.json();
+
         const unboxedResponse2 = await response2.json();
         const unboxedResponse3 = await response3.json();
         this.setState({
@@ -64,30 +67,66 @@ class carousel extends Component {
             </Spinner>
           )}
         </div>
-        <h4>Trending Now</h4>
-
+        <h3 id="headings" className="award-winning">
+          Award Winning Franchises
+        </h3>
+        <h4 id="headings">Star Wars Franchise</h4>
         <div>
-          <Carousel>
+          {/* mobile version*/}
+          <Carousel id="mobile-view-first-carousel">
+            {this.state.key1.Search &&
+              this.state.key1.Search.slice(0, 10).map((movie) => (
+                <Carousel.Item>
+                  <div class="content">
+                    <img
+                      className="w-100 mb-2"
+                      src={movie.Poster}
+                      alt={movie.Title}
+                      id="movie"
+                      key1={movie.imdbID}
+                    />
+                    <div class="overlay" style={{ zIndex: "3" }}>
+                      <div>
+                        <span className="d-flex mb-4">
+                          <h3>{movie.Title}</h3>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </Carousel.Item>
+              ))}
+          </Carousel>
+          {/* desktop version */}
+          <Carousel id="desktop-view-first-carousel">
             <Carousel.Item>
-              <Row className="row-cols-2 row-cols-md-6">
+              <Row className=" row-cols-7">
                 {this.state.key1.Search &&
-                  this.state.key1.Search.slice(0, 6).map((movie) => (
-                    <Col>
-                      <img
-                        className="w-100 mb-2"
-                        src={movie.Poster}
-                        alt={movie.Title}
-                        id="movie"
-                        key1={movie.imdbID}
-                      />
+                  this.state.key1.Search.slice(0, 7).map((movie) => (
+                    <Col style={{ zIndex: 3 }}>
+                      <div class="content">
+                        <img
+                          className="w-100 mb-2"
+                          src={movie.Poster}
+                          alt={movie.Title}
+                          id="movie"
+                          key1={movie.imdbID}
+                        />
+                        <div class="overlay" style={{ zIndex: "3" }}>
+                          <div>
+                            <span className="d-flex mb-2">
+                              <h5>{movie.Title}</h5>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
                     </Col>
                   ))}
               </Row>
             </Carousel.Item>
             <Carousel.Item>
-              <Row className="row-cols-6">
+              <Row className="row-cols-7">
                 {this.state.key1.Search &&
-                  this.state.key1.Search.slice(4, 10).map((movie) => (
+                  this.state.key1.Search.slice(3, 10).map((movie) => (
                     <Col>
                       <img
                         className="w-100 mb-2"
@@ -103,41 +142,131 @@ class carousel extends Component {
           </Carousel>
         </div>
 
-        <h4>Watch It Again</h4>
-        <Carousel fade>
-          <Carousel.Item className="d-flex">
-            <Stack direction="horizontal" gap={2}>
-              {this.state.key2.Search &&
-                this.state.key2.Search.slice(0, 8).map((movie) => (
-                  <img
-                    className="d-block w-100"
-                    src={movie.Poster}
-                    alt={movie.Title}
-                    id="movie"
-                    key2={movie.imdbID}
-                  />
-                ))}
-            </Stack>
-          </Carousel.Item>
-        </Carousel>
-        <h4>New Releases</h4>
+        <h4 id="headings">Lord Of The Rings Franchise</h4>
 
-        <Carousel fade>
-          <Carousel.Item className="d-flex">
-            <Stack direction="horizontal" gap={2}>
-              {this.state.key3.Search &&
-                this.state.key3.Search.slice(0, 8).map((movie) => (
-                  <img
-                    className="d-block w-100"
-                    src={movie.Poster}
-                    alt={movie.Title}
-                    id="movie"
-                    key3={movie.imdbID}
-                  />
-                ))}
-            </Stack>
-          </Carousel.Item>
-        </Carousel>
+        <div>
+          {/* mobile version*/}
+          <Carousel id="mobile-view-first-carousel">
+            {this.state.key2.Search &&
+              this.state.key2.Search.slice(0, 10).map((movie) => (
+                <Carousel.Item>
+                  <div class="content">
+                    <img
+                      className="w-100 mb-2"
+                      src={movie.Poster}
+                      alt={movie.Title}
+                      id="movie"
+                      key1={movie.imdbID}
+                    />
+                    <div class="overlay" style={{ zIndex: "3" }}>
+                      <div>
+                        <span className="d-flex mb-4">
+                          <h3>{movie.Title}</h3>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </Carousel.Item>
+              ))}
+          </Carousel>
+          {/* desktop version */}
+          <Carousel id="desktop-view-first-carousel">
+            <Carousel.Item>
+              <Row className=" row-cols-7">
+                {this.state.key2.Search &&
+                  this.state.key2.Search.slice(0, 7).map((movie) => (
+                    <Col>
+                      <img
+                        className="w-100 mb-2"
+                        src={movie.Poster}
+                        alt={movie.Title}
+                        id="movie"
+                        key1={movie.imdbID}
+                      />
+                    </Col>
+                  ))}
+              </Row>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Row className="row-cols-7">
+                {this.state.key2.Search &&
+                  this.state.key2.Search.slice(3, 10).map((movie) => (
+                    <Col>
+                      <img
+                        className="w-100 mb-2"
+                        src={movie.Poster}
+                        alt={movie.Title}
+                        id="movie"
+                        key1={movie.imdbID}
+                      />
+                    </Col>
+                  ))}
+              </Row>
+            </Carousel.Item>
+          </Carousel>
+        </div>
+        <h4 id="headings">Star Trek Franchise</h4>
+        <div>
+          {/* mobile version*/}
+          <Carousel id="mobile-view-first-carousel">
+            {this.state.key3.Search &&
+              this.state.key3.Search.slice(0, 10).map((movie) => (
+                <Carousel.Item>
+                  <div class="content">
+                    <img
+                      className="w-100 mb-2"
+                      src={movie.Poster}
+                      alt={movie.Title}
+                      id="movie"
+                      key1={movie.imdbID}
+                    />
+                    <div class="overlay" style={{ zIndex: "3" }}>
+                      <div>
+                        <span className="d-flex mb-4">
+                          <h3>{movie.Title}</h3>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </Carousel.Item>
+              ))}
+          </Carousel>
+          {/* desktop version */}
+          <Carousel id="desktop-view-first-carousel">
+            <Carousel.Item>
+              <Row className=" row-cols-7">
+                {this.state.key3.Search &&
+                  this.state.key3.Search.slice(0, 7).map((movie) => (
+                    <Col>
+                      <img
+                        className="w-100 mb-2"
+                        src={movie.Poster}
+                        alt={movie.Title}
+                        id="movie"
+                        key1={movie.imdbID}
+                      />
+                    </Col>
+                  ))}
+              </Row>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Row className="row-cols-7">
+                {this.state.key3.Search &&
+                  this.state.key3.Search.slice(3, 10).map((movie) => (
+                    <Col>
+                      <img
+                        className="w-100 mb-2"
+                        src={movie.Poster}
+                        alt={movie.Title}
+                        id="movie"
+                        key1={movie.imdbID}
+                      />
+                    </Col>
+                  ))}
+              </Row>
+            </Carousel.Item>
+          </Carousel>
+        </div>
       </>
     );
   }

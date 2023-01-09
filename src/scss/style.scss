@@ -1,0 +1,53 @@
+@import "/node_modules/bootstrap/scss/bootstrap";
+@import "../index.css";
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
+  width: $carousel-control-icon-width;
+  height: $carousel-control-icon-width;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-size: 200% 300% !important;
+}
+.carousel-indicators {
+  [data-bs-target] {
+    padding: 2px;
+    width: 10px;
+    background-color: rgba(163, 163, 163, 0.836);
+  }
+
+  .active {
+    width: 30px;
+    background-color: rgb(255, 0, 0);
+  }
+}
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+  z-index: 0;
+  // Use flex for alignment (1-3)
+  display: flex; // 1. allow flex styles
+  align-items: center; // 2. vertically center contents
+  justify-content: center; // 3. horizontally center contents
+  width: $carousel-control-width;
+  padding: 10rem;
+  color: $carousel-control-color;
+  text-align: center;
+  background: none;
+  border: 0;
+  opacity: $carousel-control-opacity;
+  @include transition($carousel-control-transition);
+
+  // Hover/focus state
+  &:hover,
+  &:focus {
+    color: $carousel-control-color;
+    text-decoration: none;
+    outline: 0;
+    opacity: $carousel-control-hover-opacity;
+  }
+}

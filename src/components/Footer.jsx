@@ -1,84 +1,35 @@
-import Card from "react-bootstrap/Card";
-
 function Footer() {
   return (
-    // <Card className="text-center text-light" id="footer">
-    //   <Card.Body>
-    //     <Card.Title>Special title treatment</Card.Title>
-    //     <Card.Text>
-    //       With supporting text below as a natural lead-in to additional content.
-    //     </Card.Text>
-    //   </Card.Body>
-    //   <Card.Footer className="text-muted">
-    //     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi repellat
-    //     itaque libero magni id aperiam iusto illum optio consequatur laboriosam
-    //     accusantium obcaecati ducimus, voluptas alias rem quo voluptatem amet
-    //     perspiciatis!
-    //   </Card.Footer>
-    // </Card>
-
     <footer className="text-center text-lg-start bg-light text-muted">
-      <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-        <div className="me-5 d-none d-lg-block">
-          <span>Get connected with us on social networks:</span>
-        </div>
-
-        <div>
-          <a href="" className="me-4 text-reset">
-            <i className="fab fa-facebook-f"></i>
-          </a>
-          <a href="" className="me-4 text-reset">
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a href="" className="me-4 text-reset">
-            <i className="fab fa-google"></i>
-          </a>
-          <a href="" className="me-4 text-reset">
-            <i className="fab fa-instagram"></i>
-          </a>
-          <a href="" className="me-4 text-reset">
-            <i className="fab fa-linkedin"></i>
-          </a>
-          <a href="" className="me-4 text-reset">
-            <i className="fab fa-github"></i>
-          </a>
-        </div>
-      </section>
-
-      <section className="">
+      <section className="text-light" id="footer">
         <div className="container text-center text-md-start mt-5">
           <div className="row mt-3">
             <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">
-                <i className="fas fa-gem me-3"></i>Company name
+              <h6 className="text-uppercase fw-bold m-4">
+                <i className="fas fa-gem me-3"></i>Netflix
               </h6>
-              <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
-              </p>
+              <p>Questions? Call 00 800 112 4393</p>
             </div>
 
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Products</h6>
               <p>
                 <a href="#!" className="text-reset">
-                  Angular
+                  Account
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  React
+                  FAQ
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Vue
+                  Privacy
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Laravel
+                  Speed Test
                 </a>
               </p>
             </div>
