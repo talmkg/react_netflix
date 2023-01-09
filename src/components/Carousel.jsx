@@ -12,7 +12,7 @@ class carousel extends Component {
   movieSearch = async () => {
     try {
       const response1 = await fetch(
-        "http://www.omdbapi.com/?apikey=e13e47fa&s=star%20trek"
+        "http://www.omdbapi.com/?apikey=e13e47fa&s=star+wars"
       );
       const response2 = await fetch(
         "http://www.omdbapi.com/?apikey=e13e47fa&s=lord%20of%20the%20rings"
