@@ -11,16 +11,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+* {
+  font-family: "Poppins", sans-serif;
+}
 #body,
 #navbar,
 #footer,
 #mobile-navbar,
+#desktop-navbar,
 #footer {
   background-color: #0f0f0f !important;
 }
 #homepage {
-  height: 80vh;
-  background-image: url("https://images3.alphacoders.com/882/thumb-1920-882548.jpg") !important;
+  background-image: linear-gradient(
+      to top,
+      #000000,
+      #3a33346b,
+      #75646600,
+      #b6999b00,
+      #fbd3d300
+    ),
+    linear-gradient(
+      to right,
+      #000000,
+      #3a333471,
+      #75646600,
+      #b6999b00,
+      #fbd3d300
+    ),
+    url("https://images3.alphacoders.com/882/thumb-1920-882548.jpg");
+
   background-position: bottom;
 }
 #no-p-no-m {
@@ -113,6 +133,13 @@ a {
     margin-right: 0 !important;
     margin-left: 0 !important;
   }
+  #homepage-movie-logo {
+    width: 70vw;
+  }
+  #homepage {
+    height: 90vh;
+    text-align: center;
+  }
 }
 @media only screen and (min-width: 700px) {
   #mobile-view-first-carousel {
@@ -120,5 +147,9 @@ a {
   }
   #mobile-navbar {
     display: none !important;
+  }
+  #homepage-description {
+    max-width: 550px;
+    font-size: 17px;
   }
 }

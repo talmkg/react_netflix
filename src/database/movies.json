@@ -1,0 +1,14 @@
+[
+  {
+    "Title": "Spotify Clone",
+    "Link": "https://github.com/talmkg/Spotify-Clone-DeezerAPI",
+    "Images": [
+      "https://i.imgur.com/b7UTTkt.png",
+      "https://i.imgur.com/qW1wx5o.png",
+      "https://i.imgur.com/vHMuklS.png",
+      "https://i.imgur.com/0lnYrWe.png"
+    ],
+    "Tech_stack": ["HTML", "CSS", "JavaScript", "Bootstrap 5"],
+    "Description": "Spotify Website's clone built on Deezer's API (Playable songs, Albums page, Artist page, Search page & more) and Bootstrap 5. There is also a recent version remade on React.js & Redux, feel free to check out my Github!"
+  }
+]

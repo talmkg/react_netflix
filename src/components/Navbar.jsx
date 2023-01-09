@@ -8,7 +8,7 @@ import { MdOutlineNotificationsOff, MdSearch } from "react-icons/md";
 function BSnavbar() {
   return (
     <>
-      <Navbar variant="dark" className="p-4" id="desktop-navbar">
+      <Navbar variant="dark" className="p-4 sticky-top" id="desktop-navbar">
         <Navbar.Brand href="#home">
           <img
             alt=""

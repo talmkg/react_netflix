@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { BsChevronRight } from "react-icons/bs";
 import { Carousel, Stack, Spinner, Row, Col } from "react-bootstrap";
 import { AiFillPlayCircle } from "react-icons/ai";
+import "../scss/style.scss";
 class carousel extends Component {
   state = {
     key1: [],
