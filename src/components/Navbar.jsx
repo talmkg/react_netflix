@@ -4,6 +4,7 @@ import { VscPlayCircle } from "react-icons/vsc";
 import { RiSearchLine } from "react-icons/ri";
 import { HiOutlineUser } from "react-icons/hi";
 import { IoIosShare } from "react-icons/io";
+import { MdOutlineNotificationsOff, MdSearch } from "react-icons/md";
 function BSnavbar() {
   return (
     <>
@@ -15,6 +16,7 @@ function BSnavbar() {
             height="30"
           />
         </Navbar.Brand>
+
         <Nav className="me-auto">
           <Nav.Link href="#home">Home</Nav.Link>
           <Nav.Link href="#features">TV Shows</Nav.Link>
@@ -22,6 +24,15 @@ function BSnavbar() {
           <Nav.Link href="#pricing">Recently Added</Nav.Link>
           <Nav.Link href="#pricing">My List</Nav.Link>
         </Nav>
+        <form class="form-inline my-2 my-lg-0">
+          <MdSearch size={30} className="me-2 mx-2" />
+          <MdOutlineNotificationsOff size={30} className="me-2 mx-2" />
+          <img
+            src="https://randomuser.me/api/portraits/lego/6.jpg"
+            style={{ width: "45px", borderRadius: "50%" }}
+            className="me-2 mx-2"
+          />
+        </form>
       </Navbar>
       <Navbar
         className="p-3 d-flex justify-content-between text-red "

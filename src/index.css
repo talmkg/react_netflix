@@ -20,14 +20,30 @@ code {
 }
 #homepage {
   height: 80vh;
-  background-color: #262626;
+  background-image: url("https://images3.alphacoders.com/882/thumb-1920-882548.jpg") !important;
+  background-position: bottom;
+}
+#no-p-no-m {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 #movie {
   aspect-ratio: 11/16 !important;
   object-fit: cover;
 }
 .text-red {
-  color: #ff002b !important;
+  color: #ff002d !important;
+}
+.text-red-darker {
+  color: #b80324 !important;
 }
 a {
   text-decoration: none !important;
@@ -53,10 +69,10 @@ a {
   background-image: linear-gradient(
     to top,
     #000000,
-    #000000cc,
-    #ad353586,
+    #000000b0,
+    #77777786,
     #b9b9b91e,
-    #ffffff00
+    #b1080800
   );
   color: #f1f1f1;
   width: 100%;
@@ -68,7 +84,6 @@ a {
   display: flex;
   justify-content: center;
   text-align: center !important;
-  display: flex;
   align-items: flex-end;
 }
 
@@ -93,6 +108,10 @@ a {
   #headings {
     margin-top: 1rem;
     opacity: 0.8;
+  }
+  #carousel-main-body {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
   }
 }
 @media only screen and (min-width: 700px) {
