@@ -24,7 +24,7 @@ function BSnavbar() {
           <Nav.Link href="#pricing">Recently Added</Nav.Link>
           <Nav.Link href="#pricing">My List</Nav.Link>
         </Nav>
-        <form class="form-inline my-2 my-lg-0">
+        <form class="form-inline my-2 my-lg-0  text-muted">
           <MdSearch size={30} className="me-2 mx-2" />
           <MdOutlineNotificationsOff size={30} className="me-2 mx-2" />
           <img

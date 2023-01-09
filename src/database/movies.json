@@ -1,83 +1,79 @@
 [
   {
-    "Popular": [
-      {
-        "Title": "The Witcher",
-        "Genres": ["Action", "Adventure", "Drama", "Fantasy", "Mystery"],
-        "Year-start": "2019",
-        "Year-end": "Present",
-        "Description": "Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts.",
-        "Type": "Series",
-        "Seasons": "3",
-        "Episodes": "24",
-        "Cover": "https://netflixjunkie.com/wp-content/uploads/2021/12/The-Witcher-Season-2-April-2020-Development-amp-Latest-News-1280x720-1.jpg-1140x600.webp"
-      },
-      {
-        "Title": "Tokyo Vice",
-        "Genres": ["Action", "Drama", "Crime"],
-        "Year-start": "2022",
-        "Year-end": "Present",
-        "Description": "Jake Adelstein, an American journalist, plugs into the Tokyo Vice police squad and descends into the neon underbelly of Tokyo.",
-        "Type": "Series",
-        "Seasons": "1",
-        "Episodes": "8",
-        "Cover": "https://flxt.tmsimg.com/assets/p21605753_b_h8_ab.jpg"
-      },
-      {
-        "Title": "Daredevil",
-        "Genres": ["Action", "Drama", "Crime"],
-        "Year-start": "2015",
-        "Year-end": "Present",
-        "Description": "Blinded as a young boy, Matt Murdock fights injustice by day as a lawyer and by night as the Super Hero Daredevil in Hell's Kitchen, New York City.",
-        "Type": "Series",
-        "Seasons": "3",
-        "Episodes": "39",
-        "Cover": "https://legionofleia.files.wordpress.com/2015/02/screen-shot-2015-02-26-at-1-08-45-pm.png"
-      },
-      {
-        "Title": "Punisher",
-        "Genres": ["Action", "Drama", "Crime"],
-        "Year-start": "2017",
-        "Year-end": "2019",
-        "Description": "Following the death of his family by the hands of a group of ruthless criminals, Frank Castle seeks to take revenge and punish those who are responsible for his tragedy.",
-        "Type": "Series",
-        "Seasons": "2",
-        "Episodes": "26",
-        "Cover": "https://i.ytimg.com/vi/sDp4AuNen0Y/maxresdefault.jpg"
-      },
-      {
-        "Title": "Stranger Things",
-        "Genres": ["Action", "Drama", "Adventure", "Horror", "Fantasy"],
-        "Year-start": "2016",
-        "Year-end": "Present",
-        "Description": "In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search for answers, the children unravel a series of extraordinary mysteries.",
-        "Type": "Series",
-        "Seasons": "4",
-        "Episodes": "42",
-        "Cover": "https://phantom-marca.unidadeditorial.es/75efb02c6a249960938d66061da25988/resize/1320/f/jpg/assets/multimedia/imagenes/2022/02/17/16451324297651.jpg"
-      },
-      {
-        "Title": "Arcane",
-        "Genres": ["Action", "Drama", "Fantasy", "Steampunk", "Science"],
-        "Year-start": "2021",
-        "Year-end": "Present",
-        "Description": "The origins of two iconic League champions, set in the utopian Piltover and the oppressed underground of Zaun.",
-        "Type": "Series",
-        "Seasons": "1",
-        "Episodes": "9",
-        "Cover": "https://metro.co.uk/wp-content/uploads/2021/11/EN-US_Arcane_Payoff_Horizontal_Wallpaper_1920x1200_RGB_W1.1-7357.jpg?quality=90&strip=all"
-      },
-      {
-        "Title": "Sopranos",
-        "Genres": ["Action", "Drama", "Crime"],
-        "Year-start": "2021",
-        "Year-end": "Present",
-        "Description": "Tony Soprano, an Italian-American mafia head based in New Jersey, struggles to manage his family and criminal life and confides his affairs to his psychiatrist Jennifer Melfi.",
-        "Type": "Series",
-        "Seasons": "6",
-        "Episodes": "86",
-        "Cover": "https://www.sociomix.com/images/diaries/63/1621876732-1851.jpg"
-      }
-    ]
+    "Title": "The Witcher",
+    "Genres": ["Action", "Adventure", "Drama", "Fantasy", "Mystery"],
+    "Year-start": "2019",
+    "Year-end": "Present",
+    "Description": "Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts.",
+    "Type": "Series",
+    "Seasons": "3",
+    "Episodes": "24",
+    "Cover": "https://netflixjunkie.com/wp-content/uploads/2021/12/The-Witcher-Season-2-April-2020-Development-amp-Latest-News-1280x720-1.jpg-1140x600.webp"
+  },
+  {
+    "Title": "Tokyo Vice",
+    "Genres": ["Action", "Drama", "Crime"],
+    "Year-start": "2022",
+    "Year-end": "Present",
+    "Description": "Jake Adelstein, an American journalist, plugs into the Tokyo Vice police squad and descends into the neon underbelly of Tokyo.",
+    "Type": "Series",
+    "Seasons": "1",
+    "Episodes": "8",
+    "Cover": "https://flxt.tmsimg.com/assets/p21605753_b_h8_ab.jpg"
+  },
+  {
+    "Title": "Daredevil",
+    "Genres": ["Action", "Drama", "Crime"],
+    "Year-start": "2015",
+    "Year-end": "Present",
+    "Description": "Blinded as a young boy, Matt Murdock fights injustice by day as a lawyer and by night as the Super Hero Daredevil in Hell's Kitchen, New York City.",
+    "Type": "Series",
+    "Seasons": "3",
+    "Episodes": "39",
+    "Cover": "https://legionofleia.files.wordpress.com/2015/02/screen-shot-2015-02-26-at-1-08-45-pm.png"
+  },
+  {
+    "Title": "Punisher",
+    "Genres": ["Action", "Drama", "Crime"],
+    "Year-start": "2017",
+    "Year-end": "2019",
+    "Description": "Following the death of his family by the hands of a group of ruthless criminals, Frank Castle seeks to take revenge and punish those who are responsible for his tragedy.",
+    "Type": "Series",
+    "Seasons": "2",
+    "Episodes": "26",
+    "Cover": "https://i.ytimg.com/vi/sDp4AuNen0Y/maxresdefault.jpg"
+  },
+  {
+    "Title": "Stranger Things",
+    "Genres": ["Action", "Drama", "Adventure", "Horror", "Fantasy"],
+    "Year-start": "2016",
+    "Year-end": "Present",
+    "Description": "In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search for answers, the children unravel a series of extraordinary mysteries.",
+    "Type": "Series",
+    "Seasons": "4",
+    "Episodes": "42",
+    "Cover": "https://phantom-marca.unidadeditorial.es/75efb02c6a249960938d66061da25988/resize/1320/f/jpg/assets/multimedia/imagenes/2022/02/17/16451324297651.jpg"
+  },
+  {
+    "Title": "Arcane",
+    "Genres": ["Action", "Drama", "Fantasy", "Steampunk", "Science"],
+    "Year-start": "2021",
+    "Year-end": "Present",
+    "Description": "The origins of two iconic League champions, set in the utopian Piltover and the oppressed underground of Zaun.",
+    "Type": "Series",
+    "Seasons": "1",
+    "Episodes": "9",
+    "Cover": "https://metro.co.uk/wp-content/uploads/2021/11/EN-US_Arcane_Payoff_Horizontal_Wallpaper_1920x1200_RGB_W1.1-7357.jpg?quality=90&strip=all"
+  },
+  {
+    "Title": "Sopranos",
+    "Genres": ["Action", "Drama", "Crime"],
+    "Year-start": "2021",
+    "Year-end": "Present",
+    "Description": "Tony Soprano, an Italian-American mafia head based in New Jersey, struggles to manage his family and criminal life and confides his affairs to his psychiatrist Jennifer Melfi.",
+    "Type": "Series",
+    "Seasons": "6",
+    "Episodes": "86",
+    "Cover": "https://www.sociomix.com/images/diaries/63/1621876732-1851.jpg"
   }
 ]

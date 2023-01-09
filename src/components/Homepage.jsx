@@ -8,7 +8,7 @@ const Homepage = () => {
         id="homepage"
         className=" d-flex align-items-start justify-content-start "
       >
-        <div className="p-4">
+        <div className="p-4 m-4">
           <div className="d-flex justify-content-center">
             <img
               src="https://1000logos.net/wp-content/uploads/2021/04/Stranger-Things-logo.png"
@@ -23,7 +23,7 @@ const Homepage = () => {
             and horror classics has earned dozens of Emmy nominations, including
             three for Outstanding Drama.
           </p>
-          <div className="d-flex">
+          <div className="d-flex mt-3">
             <Button className="btn btn-light d-flex align-items-center me-2">
               <IoPlay size={25} className="me-2 one-size-button" />
               Play

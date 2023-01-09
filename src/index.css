@@ -22,29 +22,12 @@ code {
 #footer {
   background-color: #0f0f0f !important;
 }
-#homepage {
-  height: 85vh;
-  background-image: linear-gradient(
-      to top,
-      #0f0f0f,
-      #0f0f0fc4,
-      #75646600,
-      #b6999b00,
-      #fbd3d300
-    ),
-    linear-gradient(
-      to right,
-      #000000,
-      #3a333471,
-      #75646600,
-      #b6999b00,
-      #fbd3d300
-    ),
-    url("https://images3.alphacoders.com/882/thumb-1920-882548.jpg");
 
-  background-position: bottom;
+no-p-no-m {
+  margin: 0 !important;
+  padding: 0 !important;
 }
-#no-p-no-m {
+p {
   margin: 0 !important;
   padding: 0 !important;
 }
@@ -56,9 +39,11 @@ code {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-#movie {
-  aspect-ratio: 11/16 !important;
-  object-fit: cover;
+.movie {
+  aspect-ratio: 16/9 !important;
+  object-fit: cover !important;
+  background-size: cover !important;
+  margin-bottom: 10px;
 }
 .text-red {
   color: #ff002d !important;
@@ -87,14 +72,7 @@ a {
   z-index: 3;
   position: absolute;
   bottom: 0;
-  background-image: linear-gradient(
-    to top,
-    #000000,
-    #000000b0,
-    #77777786,
-    #b9b9b91e,
-    #b1080800
-  );
+  background: rgba(0, 0, 0, 0.8); /* Black see-through */
   color: #f1f1f1;
   width: 100%;
   height: 100%;
@@ -102,17 +80,12 @@ a {
   opacity: 0;
   font-size: 20px;
   padding: 20px;
-  display: flex;
-  justify-content: center;
-  text-align: center !important;
-  align-items: flex-end;
 }
-.one-size-button {
-  width: 35px !important;
-}
+
 .content:hover .overlay {
   opacity: 1;
 }
+
 /*PROJECTS --> DATA (OVERLAY)           END*/
 @media only screen and (max-width: 700px) {
   #mobile-view-first-carousel {
@@ -139,9 +112,25 @@ a {
   #homepage-movie-logo {
     width: 70vw;
   }
+  .truncate {
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   #homepage {
     height: 90vh;
-    text-align: center;
+    background-image: linear-gradient(
+        to top,
+        #0f0f0f,
+        #0f0f0fc4,
+        #75646600,
+        #b6999b00,
+        #fbd3d300
+      ),
+      url("https://images3.alphacoders.com/882/thumb-1920-882548.jpg");
+
+    background-position: center;
   }
 }
 @media only screen and (min-width: 700px) {
@@ -157,5 +146,33 @@ a {
   }
   #homepage-movie-logo {
     width: 400px;
+  }
+  .truncate {
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  #homepage {
+    height: 90vh;
+    background-image: linear-gradient(
+        to top,
+        #0f0f0f,
+        #0f0f0fc4,
+        #75646600,
+        #b6999b00,
+        #fbd3d300
+      ),
+      linear-gradient(
+        to right,
+        #000000,
+        #3a333471,
+        #75646600,
+        #b6999b00,
+        #fbd3d300
+      ),
+      url("https://images3.alphacoders.com/882/thumb-1920-882548.jpg");
+
+    background-position: bottom;
   }
 }
